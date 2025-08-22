@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef } from 'react';
-import '../style/playlists.scss';
+import '../playlists/playlists.scss';
 
 import Footer from '../components/navbars/navbarfooter';
 import NavBarHeaderSearch from '../components/navbars/navbarheadersearch';
