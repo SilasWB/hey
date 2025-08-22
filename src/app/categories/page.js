@@ -1,7 +1,9 @@
+"use client"
+
 import { BsThreeDots } from 'react-icons/bs';
 import Footer from '../components/navbars/navbarfooter';
 import NavBarHeaderSearch from '../components/navbars/navbarheadersearch';
-import '../style/categories.scss';
+import '../categories/categories.scss';
 import { useState } from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 

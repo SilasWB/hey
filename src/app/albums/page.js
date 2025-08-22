@@ -1,4 +1,4 @@
-import '../style/albums.scss';
+import '../albums/albums.scss';
 
 import Footer from '../components/navbars/navbarfooter';
 import NavBarHeaderSearch from '../components/navbars/navbarheadersearch';
