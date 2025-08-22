@@ -1,4 +1,6 @@
-import { useState, useRef, useEffect } from 'react';
+"use client"
+
+import { useState, useRef } from 'react';
 import '../style/playlists.scss';
 
 import Footer from '../components/navbars/navbarfooter';
