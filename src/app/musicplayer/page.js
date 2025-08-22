@@ -1,12 +1,12 @@
 "use client";
 
-import { playerContext } from "@/providers/player-provider";
-import { msToTime } from "@/utils/time";
+import { playerContext } from "../providers/player-provider";
+import { msToTime } from "../utils/time";
 import Image from "next/image";
 import { useContext, useEffect, useReducer, useRef, useState } from "react";
 import { FaPause, FaPlay, FaForward, FaBackward } from "react-icons/fa";
 import NavBarHeaderNoSearch from "../components/navbars/navbarheadernosearch";
-import "../style/musicplayer.scss";
+import "@/app/musicplayer/musicplayer.scss";
 
 function useDebounce(value, delay = 300) {
   const [debounceValue, setDebounceValue] = useState(value);
