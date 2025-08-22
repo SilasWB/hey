@@ -1,0 +1,135 @@
+.music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  min-height: 85vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &__visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__disc {
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+    animation: none;
+    z-index: 1;
+  }
+
+  .rotate {
+    animation: spin 6s linear infinite;
+  }
+
+  &__waveform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 0;
+}
+
+  &__header {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #2e0927;
+    }
+    p {
+      font-size: 1rem;
+      color: #7e4c74;
+    }
+  }
+
+  &__progress {
+    width: 100%;
+    margin: 1rem 0;
+
+    &-slider {
+      width: 100%;
+      appearance: none;
+      height: 4px;
+      background: #f05a94;
+      border-radius: 2px;
+      outline: none;
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: #f05a94;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    &-time {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      color: #555;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .music-player__button {
+      background: transparent;
+      border: none;
+      font-size: 1.2rem;
+      color: #f05a94;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &--play {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #f05a94, #f77062);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 10px rgba(240, 90, 148, 0.4);
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

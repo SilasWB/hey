@@ -1,0 +1,56 @@
+.featured {
+    padding: 1rem;
+    background: #fff;
+
+    &__highlight {
+        font-size: 2rem;
+        font-weight: bold;
+        background: linear-gradient(to right, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+    }
+
+    &__item {
+        background: transparent;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: white;
+        z-index: 2;
+
+        h2, p {
+            margin: 0;
+        }
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__subtitle {
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+        color: #ccc;
+    }
+}

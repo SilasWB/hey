@@ -1,0 +1,25 @@
+.nobarsearch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+    .nobaricon {
+        font-size: 1.2rem;
+        color: #333;
+        margin-right: auto;
+    }
+
+    .nobartitle {
+        font-size: 0.85rem;
+        color: #555;
+        letter-spacing: 1px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+ 

@@ -1,0 +1,60 @@
+@use "resets";
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    text-align: center;
+
+}
+
+.intro-content {
+    animation: fadeInUp 1s ease-out;
+}
+
+.intro-logo {
+    width: 200px;
+  margin: 2rem auto;
+}
+
+.intro-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.intro-button {
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+        background: white;
+        color: #667eea;
+        transform: translateY(-2px);
+    }
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

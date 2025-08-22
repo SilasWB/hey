@@ -1,0 +1,113 @@
+@use "../resets.scss";
+
+.login {
+  &-container {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  &-title {
+    font-size: 2rem;
+    color: #2d002d;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  &-label {
+    font-weight: 600;
+    color: #2d002d;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &-input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+    border: none;
+    border-bottom: 2px solid #2d002d;
+    outline: none;
+    font-size: 0.9rem;
+    color: #2d002d;
+    background-color: transparent;
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    right: 0.75rem;
+    color: #2d002d;
+  }
+
+  &-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #2d002d;
+    border-radius: 50px;
+    background: transparent;
+    color: #2d002d;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #2d002d;
+      color: #fff;
+    }
+  }
+}
+
+.fingerprint {
+  &-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-button {
+    width: 60px;
+    height: 60px;
+    background-color: #ff0066;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #e6005c;
+    }
+  }
+
+  &-text {
+    font-size: 0.9rem;
+    color: #2d002d;
+  }
+}

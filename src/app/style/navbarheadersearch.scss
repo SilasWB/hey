@@ -1,0 +1,39 @@
+.search-header {
+  position: relative; 
+
+    &-section {
+           display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+
+  
+    }
+    &-wave {
+z-index: 1;
+width: 100%;
+position: absolute;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+        color: #333;
+        position: relative;
+        z-index: 2;
+    }
+
+    .title {
+        font-size: 0.85rem;
+        color: #555;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: 2  ;
+        text-transform: uppercase;
+    }
+}
+
+.playlist-header * {
+    color: #fff !important;
+}

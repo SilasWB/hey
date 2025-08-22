@@ -1,0 +1,47 @@
+$gradient: linear-gradient(135deg, #f72585, #ff416c, #ff4b2b);
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+
+  .footer-icon {
+    font-size: 1.8rem;
+    color: red; 
+    transition: all 0.3s ease;
+
+    &.active {
+      color: black; 
+    }
+
+    &:hover:not(.active) {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+
+  .footer-center-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: $gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -32px;
+    box-shadow: 0 4px 12px rgba(255, 65, 108, 0.4);
+
+    .footer-center-icon-inner {
+      color: white;
+      font-size: 2rem;
+    }
+  }
+}
