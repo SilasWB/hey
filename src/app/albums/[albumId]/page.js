@@ -4,6 +4,7 @@ import '../albumsdetails.scss';
 import NavBarHeaderNoSearch from '../../components/navbars/navbarheadernosearch';
 import Image from 'next/image';
 
+export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }) {
 	const { albumId } = await params;
 	const cookieStore = await cookies();
