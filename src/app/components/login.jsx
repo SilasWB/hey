@@ -52,9 +52,9 @@ export default function LoginFormel (){
 <Link href={
   `https://accounts.spotify.com/authorize?` 
   + `response_type=code` 
-  + `&client_id=${process.env.CLIENT_ID}` 
+  + `&client_id=${process.env.NEXT_PUBLIC_CLIENT_ID}` 
   + `&scope=user-read-private user-read-email`
-  + `&redirect_uri=${process.env.CALLBACK_URL}`
+  + `&redirect_uri=${process.env.NEXT_PUBLIC_CALLBACK_URL}`
 
 }>
         LOG IN
