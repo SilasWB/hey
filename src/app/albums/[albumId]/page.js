@@ -1,7 +1,7 @@
 import { FiArrowLeft } from 'react-icons/fi';
-import Footer from '../components/navbars/navbarfooter';
+import Footer from '../../components/navbars/navbarfooter';
 import '../albumdetail/albumdetails.scss';
-import NavBarHeaderNoSearch from '../components/navbars/navbarheadernosearch';
+import NavBarHeaderNoSearch from '../../components/navbars/navbarheadernosearch';
 import Image from 'next/image';
 
 export async function generateMetadata({ params }) {
