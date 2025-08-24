@@ -1,6 +1,6 @@
 import { FiArrowLeft } from 'react-icons/fi';
 import Footer from '../../components/navbars/navbarfooter';
-import '../albumdetail/albumdetails.scss';
+import '../albumsdetails.scss';
 import NavBarHeaderNoSearch from '../../components/navbars/navbarheadernosearch';
 import Image from 'next/image';
 
